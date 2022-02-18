@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <style>
+        body {
+           
+           display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           padding-top: 5rem;
+           background-image: url(./qUESTION.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed;
+           
+        }
+        .inter {
+            padding-bottom: 2rem;
+        }
+        #gif {
+            width: 40rem;
+            height: 20rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 100px;
+            opacity: 0.8;
+            
+        }
+        button {
+            background-color:red;
+            color: white;
+            border-radius: 5px;
+            width: 4rem;
+            height: 2rem;
+        }
+        input {
+            height: 1.7rem;
+            border-radius: 5px;
+        }
+        h1 {
+            font-family: 'Redressed', cursive;
+            font-size: 4rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Guessing Game </h1>
+    <small class="inter" >Between 1 and 100</small>
+
+    <h3 id="warning" style="color: red;"></h3>
+    <div>
+        <input type="text" id="number">
+        <button id="check">Check</button>
+    </div>
+    <h3 id="celebration"></h3>
+    <p >You have <span id="trying">10</span> attempts</p>
+    <div id="gif"></div>
+    
+    <script src="./App.js"></script>
+</body>
+</html>
